@@ -1,0 +1,13 @@
+﻿@page
+@{
+    Layout = "_Layout";
+}
+@model WebApplication1.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row text-center">
+    <p>Background task wil change db value every 3000 ms.</p>
+    <p>Current db value: @Model.GetDbValue() (refresh page to see changes)</p>
+</div>
